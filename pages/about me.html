@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me | Mohamed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/about me.css" />
+  <link rel="stylesheet" href="../css/social media.css"/>
+  <link rel="stylesheet" href="../css/trans.css" /> <!--Page TRansformations CSS File-->
+  <link rel="stylesheet" href="../css/certificates index.css" />
+
+
+</head>
+<body>
+
+<!-- START of Page TRansformations-->
+<div class="page">
+
+
+      <div class="top-contact">
+      📧 Contact: <a href="mailto:contact@mohdmutalib.com">contact@mohdmutalib.com</a>
+      </div>
+    
+      <br />
+
+  <!-- HERO -->
+
+  <!-- <section class="about-hero"> put here to effect with JS hidden  </section>-->
+  <div class="about-hero">
+    <img src="../images/Me.jpeg" alt="Mohamed">
+    <h1>Mohamed</h1>
+    <p>Python, Web Developer | Computer Vision & Linux Administration</p>
+  </div>
+    
+<section class="btohome">  
+<div class="social-links-Back-to-home">
+
+        <a href="../index.html">Back to Home</a>
+
+</div>
+</section>
+
+
+  <!-- ABOUT -->
+  <section class="about-section">
+    <h2>About Me</h2>
+    <p>
+      I am a self-employed developer with a strong focus on
+      Python, Computer Vision, and Artificial Intelligence.
+      I enjoy building practical projects and continuously improving my skills
+      through hands-on experience.
+    </p>
+  </section>
+
+  <!-- SKILLS SUMMARY -->
+    <section class="about-section reveal">
+    <h2>Technical Focus</h2>
+
+    
+    <div class="about-tags interactive">
+        <span onclick="openAboutSkill('python')">Python</span>
+        <span onclick="openAboutSkill('cv')">Computer Vision</span>
+        <span onclick="openAboutSkill('linux')">Linux</span>
+        <span onclick="openAboutSkill('flask')">Flask</span>
+        <span onclick="openAboutSkill('ai')">AI Basics</span>
+        <span onclick="openAboutSkill('web')">Web Development</span>
+    </div>
+
+
+
+
+
+
+
+  <!-- CERTIFICATES -->
+
+
+
+  <!-- CERTIFICATES -->
+
+
+<div class="cert-preview">
+  <h2>Certificates</h2>
+  <p class="cert-subtitle">
+    Selected certifications from Coursera
+  </p>
+
+  <div class="cert-grid">
+    <div class="cert-card" onclick="openCert('../images/Certificates/Linux and SQL.jpeg')">
+    <!--<div class="cert-card" >-->
+
+      <img src="../images/Certificates/Linux and SQL.jpeg" alt="Python Certificate">
+      <span>Linux and SQL </span>
+    </div>
+
+    
+    <div class="cert-card" onclick="openCert('../images/Certificates/Linux and SQL.jpeg')">
+    <!--<div class="cert-card">-->
+      <img src="../images/Certificates/Linux and SQL.jpeg" alt="ML Certificate">
+      <span>Cybersecurity</span>
+    </div>
+
+    
+    <div class="cert-card" onclick="openCert('../images/Certificates/Linux and SQL.jpeg')">
+    <!--<div class="cert-card">-->
+      <img src="../images/Certificates/Linux and SQL.jpeg" alt="AI Certificate">
+      <span>AI for Everyone</span>
+    </div>
+
+  </div>
+
+  <a href="../pages/certificates.html" class="view-all-btn">
+    View All Certificates →
+  </a>
+</div>
+
+</section>
+
+
+<!--
+  <section class="about-section">
+    <h2>Certificates</h2>
+    <ul class="cert-list">
+      <li>✔ Python Programming Certificate</li>
+      <li>✔ Computer Vision Fundamentals</li>
+      <li>✔ Front-end & Back-end Developer</li>
+    </ul>
+  </section>
+-->
+
+
+  <!-- CV -->
+  <section class="about-section cv-section">
+    <h2>Curriculum Vitae</h2>
+    <p>You can download my CV in PDF format.</p>
+    <a href="../CV/Mohamed Abdulmutalib - CV.pdf" class="cv-btn" download>Download CV</a>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="about-section">
+    <h2>My Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span>2018</span>
+        <p>Started learning Linux Administration and Terminal commands</p>
+      </div>
+      <div class="timeline-item">
+        <span>2019</span>
+        <p>Started learning Python and programming fundamentals</p>
+      </div>
+      <div class="timeline-item">
+        <span>2020</span>
+        <p>Built Computer Vision projects using OpenCV & SIFT</p>
+      </div>
+      <div class="timeline-item">
+        <span>2021</span>
+        <p>Created Web Applications with Flask & Portfolio Website</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section class="about-cta">
+    <h2>Let’s Work Together</h2>
+    <p>To make your project become True</p>
+    <a href="index.html">Contact Me</a>
+  </section>
+
+
+
+  <!-- ABOUT SKILL MODAL -->
+<div class="about-modal" id="aboutModal">
+  <div class="about-modal-content">
+    <span class="close-btn" onclick="closeAboutSkill()">×</span>
+    <h3 id="aboutSkillTitle"></h3>
+    <p id="aboutSkillBody"></p>
+  </div>
+</div>
+
+
+
+<!-- End OF Page Transformation-->
+</div> 
+
+
+
+<!-- SIDE EMAIL BUTTON -->
+<!-- SIDE EMAIL BUTTON -->
+<div class="side-email" id="sideEmail">
+  <button class="email-toggle" onclick="toggleEmail()" aria-label="Contact Email">
+    📧
+    <span class="tooltip">Contact me</span>
+  </button>
+
+  <div class="email-box" id="emailBox">
+    <span id="emailText">contact@mohdmutalib.com</span>
+    <button class="copy-btn" onclick="copyEmail()">Copy</button>
+  </div>
+</div>
+
+
+
+
+
+<!-- Certificate Modal -->
+<div id="certModal" class="cert-modal">
+  <span class="cert-close" onclick="closeCert()">&times;</span>
+  <img id="certModalImg" src="" alt="Certificate">
+</div>
+
+
+
+
+<script src="../javascript/about me.js"> </script>
+<script src="../javascript/main.js"></script>
+<script src="../javascript/trans.js"></script>  <!--Page TRansformations JS File-->
+<script src="../javascript/cerificateshowonclick.js"> </script>
+
+
+
+
+</body>
+</html>

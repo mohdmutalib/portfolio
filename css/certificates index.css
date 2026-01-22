@@ -1,0 +1,128 @@
+/* START NEW Style of Certificates */
+    .cert-preview {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.cert-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cert-subtitle {
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.cert-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.cert-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.cert-card span {
+  display: block;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  border-color: #4f46e5;
+}
+
+.view-all-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.7rem 1.5rem;
+  background: transparent;
+  border: 2px solid #4f46e5;
+  color: #e5e7eb;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.view-all-btn:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+/* END    NEW Style of Certificates*/
+
+
+
+
+/*START Certificate POP-up*/
+
+/* Modal background */
+.cert-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 6, 23, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Certificate image */
+.cert-modal img {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+  animation: zoomIn 0.4s ease;
+}
+
+/* Close button */
+.cert-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;   /* 👈 يمين */
+  font-size: 2rem;
+  color: #e5e7eb;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cert-close:hover {
+  color: #f87171;
+}
+
+/* Animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/*END Certificate POP-up*/
+
+

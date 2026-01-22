@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Place Recognition | Mohamed</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/youtube-channel.css" />
+  <link rel="stylesheet" href="../css/trans.css" /> <!--Page TRansformations CSS File-->
+
+</head>
+<body>
+
+<!-- START of Page TRansformations-->
+<div class="page">
+
+
+  <!-- Top Contact Bar -->
+  <div class="top-contact">
+    📧 Contact: <a href="mailto:contact@mohdmutalib.com">contact@mohdmutalib.com</a>
+  </div>
+
+  
+  <!-- Header -->
+  <header>
+    <div class="hero">
+      <h1><span>Image Place Recognition</span></h1>
+      <p>
+        A computer vision project that recognizes places in images using
+        feature detection and matching techniques.
+      </p>
+
+      <div class="links">
+        <a href="https://github.com/engr-m7md/image-place-recognition-sift" target="_blank">
+          View on GitHub
+        </a>
+        <a href="../index.html">Back to Home</a>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- About Project -->
+  <section>
+    <h2>About the Project</h2>
+    <p style="max-width:800px;margin:auto;text-align:center;color:var(--gray);">
+      This project uses <strong>OpenCV</strong> and the <strong>SIFT</strong>
+      algorithm to detect and match keypoints between a query image and a
+      database of images in order to recognize the location.
+      The system is implemented using Python and Flask.
+    </p>
+  </section>
+
+  <!-- Project Images -->
+  <section>
+    <h2>Project Gallery</h2>
+
+    <div class="projects">
+      <div class="project">
+        <img src="../images/Projects/Faisaliah Tower 1.png" alt="Project Demo 1">
+        <p>Keypoints detection using SIFT</p>
+      </div>
+
+      <div class="project">
+        <img src="../images/Projects/Faisaliah Tower 2.png" alt="Project Demo 2">
+        <p>Feature matching with database images</p>
+      </div>
+
+      <div class="project">
+        <img src="../images/Projects/Faisaliah Tower 3.png" alt="Project Demo 3">
+        <p>Final place recognition result</p>
+      </div>
+    </div>
+  </section>
+
+<footer class="site-footer">
+  <p>© 2026 Mohamed | Image Place Recognition</p>
+  <p>
+    📧 Email:
+    <a href="mailto:contact@mohdmutalib.com">contact@mohdmutalib.com</a>
+  </p>
+</footer>
+
+
+<!-- End OF Page Transformation-->
+</div> 
+
+
+
+
+<!-- SIDE EMAIL BUTTON -->
+<!-- SIDE EMAIL BUTTON -->
+<div class="side-email" id="sideEmail">
+  <button class="email-toggle" onclick="toggleEmail()" aria-label="Contact Email">
+    📧
+    <span class="tooltip">Contact me</span>
+  </button>
+
+  <div class="email-box" id="emailBox">
+    <span id="emailText">contact@mohdmutalib.com</span>
+    <button class="copy-btn" onclick="copyEmail()">Copy</button>
+  </div>
+</div>
+
+
+
+
+
+<!--
+  <script>
+    // Simple fade-in animation
+    const sections = document.querySelectorAll('section');
+
+    sections.forEach(sec => {
+      sec.style.opacity = '0';
+      sec.style.transform = 'translateY(40px)';
+      sec.style.transition = '0.6s ease';
+    });
+
+    window.addEventListener('scroll', () => {
+      const trigger = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < trigger) {
+          sec.style.opacity = '1';
+          sec.style.transform = 'translateY(0)';
+        }
+      });
+    });
+  </script>
+-->
+<script src="../javascript/main.js"></script>
+<script src="../javascript/trans.js"></script>  <!--Page TRansformations JS File-->
+</body>
+</html>

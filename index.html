@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+  <link rel="stylesheet" href="css/social media.css" />
+  <link rel="stylesheet" href="css/trans.css" />  <!--Page TRansformations CSS File-->
+  <link rel="stylesheet" href="css/certificates index.css" />
+
+
+
+
+</head>
+<body>
+<!-- START of Page TRansformations-->
+<div class="page">
+
+
+
+    <!-- Top Contact Bar -->
+     
+      <div class="top-contact">
+      📧 Contact: <a href="mailto:contact@mohdmutalib.com">contact@mohdmutalib.com</a>
+      </div>
+    
+      <br />
+
+  
+    <header>
+    <div class="hero">
+      <div class="profile-image">
+        <img src="images/Me.jpeg" alt="Mohamed Profile Photo">
+      </div>
+      <h1>Hello, I'm <span>Mohamed</span></h1>
+      <p>
+        Computer Engineering, Web, Python & Computer Vision developer.
+        I build practical projects and share them on GitHub.
+      </p>
+      
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="pages/about me.html" class="btn cv-btn" >About Me</a>
+
+
+      <div class="social-links">
+        <a href="https://github.com/mohdmutalib" target="_blank" class="social-icon">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+
+        <a href="https://www.youtube.com/@codeoverflow" target="_blank" class="social-icon">
+          <i class="fa-brands fa-youtube"></i>
+          <span>YouTube</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/mohamed-abdulmutalib-60834b3a2/" target="_blank" class="social-icon">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+
+
+      
+    </div>
+  </header>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a self-employed developer interested in Computer Vision, Python,
+      and software projects. I enjoy turning ideas into real applications
+      and continuously improving my skills.
+    </p>
+  </section>
+<!-- SKILLS START-->
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card" onclick="openSkill('python')">
+      <h3>Python</h3>
+      <span>Advanced</span>
+    </div>
+
+    <div class="skill-card" onclick="openSkill('cv')">
+      <h3>Computer Vision</h3>
+      <span>Intermediate</span>
+    </div>
+
+    <div class="skill-card" onclick="openSkill('linux')">
+      <h3>Linux OS</h3>
+      <span>Advanced</span>
+    </div>
+
+    <div class="skill-card" onclick="openSkill('flask')">
+      <h3>Flask</h3>
+      <span>Advanced</span>
+    </div>
+
+    <div class="skill-card" onclick="openSkill('web')">
+      <h3>HTML / CSS</h3>
+      <span>Intermediate</span>
+    </div>
+
+    <div class="skill-card" onclick="openSkill('git')">
+      <h3>Git & GitHub</h3>
+      <span>Intermediate</span>
+    </div>
+  </div>
+
+
+<!-- MODAL -->
+<div class="skill-modal" id="skillModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeSkill()">×</span>
+    <h3 id="skillTitle"></h3>
+    <p id="skillBody"></p>
+  </div>
+</div>
+
+
+<!-- SKILLS END-->
+
+
+
+
+
+
+
+
+
+  <!-- CERTIFICATES -->
+
+
+<div class="cert-preview">
+  <h2>Certificates</h2>
+  <p class="cert-subtitle">
+    Selected certifications from Coursera
+  </p>
+
+  <div class="cert-grid">
+    <div class="cert-card" onclick="openCert('images/Certificates/Linux and SQL.jpeg')">
+    <!--<div class="cert-card" >-->
+
+      <img src="images/Certificates/Linux and SQL.jpeg" alt="Python Certificate">
+      <span>Linux and SQL </span>
+    </div>
+
+    
+    <div class="cert-card" onclick="openCert('images/Certificates/Linux and SQL.jpeg')">
+    <!--<div class="cert-card">-->
+      <img src="images/Certificates/Linux and SQL.jpeg" alt="ML Certificate">
+      <span>Cybersecurity</span>
+    </div>
+
+    
+    <div class="cert-card" onclick="openCert('images/Certificates/Linux and SQL.jpeg')">
+    <!--<div class="cert-card">-->
+      <img src="images/Certificates/Linux and SQL.jpeg" alt="AI Certificate">
+      <span>AI for Everyone</span>
+    </div>
+
+  </div>
+
+  <a href="pages/certificates.html" class="view-all-btn">
+    View All Certificates →
+  </a>
+</div>
+
+
+</section> <!--For SKILL END-->
+
+
+
+
+
+
+
+
+
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Image Place Recognition</h3>
+        <p>
+          A Flask + OpenCV project using SIFT to recognize locations
+          by matching image features with a database.
+        </p>
+        <a href="Projects/place recognition.html" class="btn">
+  View Project
+</a>
+      </div>
+
+      <div class="project">
+        <h3>YouTube Content Channel</h3>
+        <p>
+          YouTube Projects content created without showing face or voice,
+          focused on Learn and engagement.
+        </p>
+        <a href="Projects/youtube channel.html" class="btn">
+  View Channel
+</a>
+      </div>
+    </div>
+  </section>
+
+<footer class="site-footer">
+  <p>© 2026 Mohamed | Portfolio ;)</p>
+  <p>
+    📧 Email:
+    <a href="mailto:contact@mohdmutalib.com">contact@mohdmutalib.com</a>
+  </p>
+  <!-- <a href="CV/Mohamed Abdulmutalib - CV.pdf" download style="color:#4f46e5;">Download My CV</a>
+-->
+</footer>
+
+
+
+</div><!-- END OF PAGE Transformation---------->
+
+
+<!-- SIDE EMAIL BUTTON -->
+<!-- SIDE EMAIL BUTTON -->
+<div class="side-email" id="sideEmail">
+  <button class="email-toggle" onclick="toggleEmail()" aria-label="Contact Email">
+    📧
+    <span class="tooltip">Contact me</span>
+  </button>
+
+  <div class="email-box" id="emailBox">
+    <span id="emailText">contact@mohdmutalib.com</span>
+    <button class="copy-btn" onclick="copyEmail()">Copy</button>
+  </div>
+</div>
+
+
+<!-- Certificate Modal -->
+<div id="certModal" class="cert-modal">
+  <span class="cert-close" onclick="closeCert()">&times;</span>
+  <img id="certModalImg" src="" alt="Certificate">
+</div>
+
+
+
+
+
+<script src="javascript/main.js"></script>
+<script src="javascript/skills.js"></script>
+<script src="javascript/trans.js"></script>  <!--Page TRansformations JS File-->
+<script src="javascript/cerificateshowonclick.js"></script>
+
+
+
+
+
+</body>
+</html>

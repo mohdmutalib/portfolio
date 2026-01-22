@@ -1,0 +1,338 @@
+    :root {
+      --primary: #4f46e5;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #94a3b8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--dark);
+      color: var(--light);
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    /* Top Contact Bar */
+  /* -------- FIXED TOP EMAIL BAR -------- */
+.top-contact {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #020617;
+  text-align: center;
+  padding: 0.6rem 0; 
+  z-index: 999;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  
+  background-color: #0f172a;
+  color: #ffffff;
+
+  padding: 6px 0;
+  font-size: 14px;
+
+}
+
+.top-contact a {
+  /*color: #e5e7eb; */
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #38bdf8;
+
+}
+
+.top-contact a:hover {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+
+
+.hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+.cv-btn {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--light);
+  /* margin-left: 1rem; */
+ }
+
+.cv-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+
+    .profile-image {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid var(--primary);
+      box-shadow: 0 10px 30px rgba(79,70,229,0.4);
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header span {
+      color: var(--primary);
+    }
+
+    header p {
+      max-width: 600px;
+      margin: auto;
+      color: var(--gray);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 2rem;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #3730a3;
+    }
+
+
+
+    section {
+      padding: 5rem 10%;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      color: var(--gray);
+      text-align: center;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .skill {
+      background: #020617;
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+      background: #020617;
+      box-shadow: 0 10px 30px rgba(79,70,229,0.2);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project {
+      background: #020617;
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--gray);
+      border-top: 1px solid #020617;
+    }
+    
+    /* Footer */
+.site-footer {
+  background-color: #020617;
+  color: #cbd5f5;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+.site-footer a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+    .project img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+
+/* ---------- SIDE EMAIL ---------- */
+/* ---------- SIDE EMAIL ---------- */
+.side-email {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+/* BUTTON */
+.email-toggle {
+  background: #4f46e5;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0 14px 14px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+/* TOOLTIP */
+.tooltip {
+  position: absolute;
+  left: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #020617;
+  color: #e5e7eb;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.email-toggle:hover .tooltip {
+  opacity: 1;
+}
+
+/* EMAIL BOX */
+.email-box {
+  background: #020617;
+  padding: 0.6rem 0.8rem;
+  opacity: 0;
+  transform: translateX(-120%);
+  transition: transform 0.4s ease, opacity 0.3s ease;
+  border-radius: 0 14px 14px 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  pointer-events: none; /* مهم */
+}
+
+
+.email-box span {
+  color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.copy-btn {
+  background: #4f46e5;
+  border: none;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* SHOW */
+.email-box.show {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto; /* مهم */
+}
+
+
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .side-email {
+    left: 50%;
+    top: auto;
+    bottom: 15px;
+    transform: translateX(-50%);
+    flex-direction: column;
+  }
+
+  .email-toggle {
+    border-radius: 14px;
+  }
+
+  .email-box {
+    margin-left: 0;
+    margin-top: 10px;
+    border-radius: 14px;
+  }
+}
+
+
+

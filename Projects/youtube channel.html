@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Content Channel | Mohamed</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/youtube-channel.css" />
+  <link rel="stylesheet" href="../css/trans.css" /> <!--Page TRansformations CSS File-->
+
+
+
+</head>
+<body>
+
+
+<!-- START of Page TRansformations-->
+<div class="page">
+
+  <!-- Top Contact Bar -->
+  <div class="top-contact">
+    📧 Contact: <a href="mailto:contact@mohdmutalib.com">contact@mohdmutalib.com</a>
+  </div>
+  
+  <!-- HERO -->
+  <header>
+    <div class="hero">
+      <h1><span>YouTube Content Channel</span></h1>
+      <p>
+        A personal YouTube channel where I share content about
+        <strong>Python programming</strong> and
+        <strong>Artificial Intelligence</strong>, including tutorials,
+        projects, and practical explanations.
+      </p>
+
+      <div class="links">
+        <a href="https://www.youtube.com/codeoverflow" target="_blank">
+          Visit YouTube Channel
+        </a>
+        <a href="../index.html">Back to Home</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>About the Channel</h2>
+    <p class="about">
+      This channel focuses on creating educational and practical content
+      related to Python, AI, and real-world projects. The goal is to simplify
+      complex concepts and share hands-on knowledge with learners and
+      developers.
+    </p>
+  </section>
+
+  <!-- VIDEOS & PROJECTS -->
+  <section>
+    <h2>Featured Videos & Projects</h2>
+
+    <div class="content-grid">
+      <!-- Video 1 -->
+      <div class="card">
+        <iframe
+          src="https://www.youtube.com/embed/ONjv5oeUsVU?si=eIQB3eGXEcXaiizP"
+          allowfullscreen>
+        </iframe>
+        <h3>Python Basics Explained</h3>
+        <p>Introduction to Python programming for beginners.</p>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="card">
+        <iframe
+          src="https://www.youtube.com/embed/17iI_c5RT7w?si=aeB1pGq2eJnGNcLr"
+          allowfullscreen>
+        </iframe>
+        <h3>AI Project Walkthrough</h3>
+        <p>Building a simple AI project using Python.</p>
+      </div>
+
+      <!-- Project Card -->
+      <div class="card">
+        <img src="../images/faceR.jpg" alt="Channel Project">
+        <h3>Channel Projects</h3>
+        <p>
+          Practical coding projects shared and explained on the channel,
+          focusing on Python and AI applications.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="site-footer">
+  <p>© 2026 Mohamed | YouTube Content Channel</p>
+  <p>
+    📧 Email:
+    <a href="mailto:contact@mohdmutalib.com">contact@mohdmutalib.com</a>
+  </p>
+</footer>
+
+
+
+<!-- End OF Page Transformation-->
+</div> 
+
+
+
+<!-- SIDE EMAIL BUTTON -->
+<!-- SIDE EMAIL BUTTON -->
+<div class="side-email" id="sideEmail">
+  <button class="email-toggle" onclick="toggleEmail()" aria-label="Contact Email">
+    📧
+    <span class="tooltip">Contact me</span>
+  </button>
+
+  <div class="email-box" id="emailBox">
+    <span id="emailText">contact@mohdmutalib.com</span>
+    <button class="copy-btn" onclick="copyEmail()">Copy</button>
+  </div>
+</div>
+
+
+
+
+
+<!--  
+  <script>
+    const sections = document.querySelectorAll('section');
+
+    sections.forEach(sec => {
+      sec.style.opacity = '0';
+      sec.style.transform = 'translateY(40px)';
+      sec.style.transition = '0.6s ease';
+    });
+
+    window.addEventListener('scroll', () => {
+      const trigger = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < trigger) {
+          sec.style.opacity = '1';
+          sec.style.transform = 'translateY(0)';
+        }
+      });
+    });
+  </script>  
+-->
+
+<script src="../javascript/main.js"></script>
+<script src="../javascript/trans.js"></script>  <!--Page TRansformations JS File-->
+</body>
+</html>

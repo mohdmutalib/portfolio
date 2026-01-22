@@ -1,0 +1,94 @@
+
+
+/*----------------------------------------------Hover on Links Buttom ----------------------------------------------*/
+
+/* ---------- SOCIAL ICONS ---------- */
+.social-links {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  width: 55px;
+  height: 55px;
+  background: #020617;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 1.4rem;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+/* النص */
+.social-icon span {
+  position: absolute;
+  opacity: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+/* الايقونة */
+.social-icon i {
+  transition: 0.3s ease;
+}
+
+/* عند hover */
+.social-icon:hover {
+  /*background: #4f46e5;*/
+  background: #000000;
+  border-radius: 14px;
+}
+
+.social-icon:hover i {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.social-icon:hover span {
+  opacity: 100;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .social-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+
+
+    .social-links-Back-to-home {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .social-links-Back-to-home a {
+      padding: 0.6rem 1.4rem;
+      border: 1px solid var(--primary);
+      border-radius: 25px;
+      color: var(--light);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+
+    .social-links-Back-to-home a:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    
