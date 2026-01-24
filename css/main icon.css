@@ -1,0 +1,81 @@
+
+/* ---------- ABOUT PAGE ---------- */
+.about-hero {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.about-hero img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.about-hero h1 {
+  font-size: 2rem;
+}
+
+.about-hero p {
+  color: var(--gray);
+}
+
+/* SECTIONS */
+.about-section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.about-section h2 {
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  color: var(--gray);
+  line-height: 1.7;
+}
+
+/* TAGS */
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.about-tags span {
+  background: #020617;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+
+.main_icon {
+   border: 4px solid var(--primary); 
+}
+
+/*
+<!-- HERO -->
+<!-- <section class="about-hero"> put here to effect with JS hidden  </section>-->
+<!-- add "main icon.css" file as linked file -->
+<!-- copy the below "div" into top of page you want to add icon as the shape belwo-->
+
+
+
+<div class="about-hero">                       <!--div START-->
+
+    <img class="main_icon" src="../images/Projects/place recognition.png" alt="codeoverflow">
+    
+    <h1><span>Smart Attendance webApp</span></h1>
+      <p>
+        A computer vision project that recognizes places in images using
+        feature detection and matching techniques.
+      </p>
+  
+
+
+</div>                                          <!--div END-->
+
+*/
